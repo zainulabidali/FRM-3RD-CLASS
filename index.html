@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Badr vs Uhud - Scoreboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Top Buttons -->
+    <div class="top-bar">
+      <button id="scoreReset">🔄 Score Reset</button>
+      <button id="timerReset">⏱️ Timer Reset</button>
+    </div>
+
+    <!-- Timer & VS -->
+    <div class="center-area">
+      <div id="timer">00:00</div>
+      <div class="vs">VS</div>
+    </div>
+
+    <!-- Teams -->
+    <div class="teams">
+      <!-- Left -->
+      <div class="team" id="leftTeam">
+        <div class="team-name">
+          <span id="leftName">Badr</span>
+          <button class="edit-btn" id="editLeft">✏️</button>
+        </div>
+        <div class="score" id="leftScore">0</div>
+        <div class="btn-group">
+          <button class="btn plus" id="leftPlus">+5 പോയിൻറ്</button>
+          <button class="btn minus" id="leftMinus">−3 പോയിൻറ്</button>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div class="team" id="rightTeam">
+        <div class="team-name">
+          <span id="rightName">Uhud</span>
+          <button class="edit-btn" id="editRight">✏️</button>
+        </div>
+        <div class="score" id="rightScore">0</div>
+        <div class="btn-group">
+          <button class="btn plus" id="rightPlus">+5 പോയിൻറ്</button>
+          <button class="btn minus" id="rightMinus">−3 പോയിൻറ്</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <audio id="scoreSound" src="click.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

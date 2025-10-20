@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at center, #0a0f2c, #020312);
+  color: #fff;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.top-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.top-bar button {
+  background: #7d7c7c;
+  color: #000;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.top-bar button:hover {
+  background: #939393;
+}
+
+.center-area {
+  text-align: center;
+}
+
+#timer {
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #06d6a0;
+  text-shadow: 0 0 20px #06d66b;
+  letter-spacing: 2px;
+}
+/* 🔹 VS Animation */
+.vs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: 20px 30px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  animation: pulse 1.5s infinite alternate;
+}
+
+
+.teams {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.team {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+  width: 40%;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s;
+}
+
+.team:hover {
+  transform: scale(1.03);
+}
+
+.team-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.score {
+  font-size: 80px;
+  font-weight: bold;
+  color: #f0f3f2;
+  margin: 10px 0;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.plus {
+  background: #11b27f;
+}
+.plus:hover {
+  background: #06d6a0;
+}
+
+.minus {
+  background: #ef476f;
+}
+.minus:hover {
+  background: #ff6b6b;
+}
+
+.edit-btn {
+  font-size: 18px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
