@@ -2,7 +2,11 @@
 <html lang="ml">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#667eea" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <title>Badr vs Uhud - Scoreboard</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -12,6 +16,7 @@
     <!-- Top Buttons -->
     <div class="top-bar">
       <button id="scoreReset">🔄 Score Reset</button>
+      <button id="timerPause">⏸️ Pause</button>
       <button id="timerReset">⏱️ Timer Reset</button>
     </div>
 
@@ -31,8 +36,8 @@
         </div>
         <div class="score" id="leftScore">0</div>
         <div class="btn-group">
-          <button class="btn plus" id="leftPlus">+5 പോയിൻറ്</button>
-          <button class="btn minus" id="leftMinus">−3 പോയിൻറ്</button>
+          <button class="btn plus" id="leftPlus">+5 </button>
+          <button class="btn minus" id="leftMinus">−3 </button>
         </div>
       </div>
 
@@ -44,12 +49,16 @@
         </div>
         <div class="score" id="rightScore">0</div>
         <div class="btn-group">
-          <button class="btn plus" id="rightPlus">+5 പോയിൻറ്</button>
-          <button class="btn minus" id="rightMinus">−3 പോയിൻറ്</button>
+          <button class="btn plus" id="rightPlus">+5 </button>
+          <button class="btn minus" id="rightMinus">−3 </button>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Celebration Effects -->
+  <canvas id="confettiCanvas"></canvas>
+  <div id="celebrationOverlay"></div>
 
   <audio id="scoreSound" src="click.mp3" preload="auto"></audio>
   <script src="script.js"></script>
