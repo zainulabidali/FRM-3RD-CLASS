@@ -84,14 +84,15 @@ document.getElementById('timerPause').onclick = () => {
 };
 document.getElementById('timerReset').onclick = () => {
   initAudioContext();
+   resetTimer();
   
   // Show confirmation dialog
-  if (confirm('Are you sure you want to reset the timer?\n\nThis will restart the timer from 00:00.')) {
-    playResetSound();
-    resetTimer();
-  } else {
-    playButtonClick(); // Play cancel sound
-  }
+  // if (confirm('Are you sure you want to reset the timer?\n\nThis will restart the timer from 00:00.')) {
+  //   playResetSound();
+  //   resetTimer();
+  // } else {
+  //   playButtonClick(); // Play cancel sound
+  // }
 };
 
 // 🧩 Load previous data from localStorage
